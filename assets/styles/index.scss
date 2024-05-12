@@ -1,0 +1,16 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  margin: auto;
+}
+
+@import './components/card-config';
+@import './components/header';
+@import './components/pokeList';
+@import './components/types-config';
+@import './components/types-pokemons';

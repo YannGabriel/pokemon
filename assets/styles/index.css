@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  margin: auto;
+}
+
+ol.pokemons {
+  list-style-type: none;
+}
+ol.pokemons li.normal {
+  background-color: #9f9f9f;
+}
+ol.pokemons li.fire {
+  background-color: #f90536;
+}
+ol.pokemons li.water {
+  background-color: #9ECCFA;
+}
+ol.pokemons li.grass {
+  background-color: #08D57F;
+}
+ol.pokemons li.electric {
+  background-color: #EFBF38;
+}
+ol.pokemons li.bug {
+  background-color: #87AB69;
+}
+ol.pokemons li.poison {
+  background-color: #9c6fc2;
+}
+ol.pokemons li.flying {
+  background-color: #8DCFEC;
+}
+ol.pokemons li.ground {
+  background-color: #8F664A;
+}
+ol.pokemons li.ice {
+  background-color: #9CC9D2;
+}
+ol.pokemons li.rock {
+  background-color: #765341;
+}
+ol.pokemons li.psychic {
+  background-color: #fd53a5;
+}
+ol.pokemons li.fighting {
+  background-color: #D73939;
+}
+ol.pokemons li.fairy {
+  background-color: #F99DBC;
+}
+ol.pokemons li.ghost {
+  background-color: #4B1C71;
+}
+ol.pokemons li.dragon {
+  background-color: #2979FF;
+}
+ol.pokemons li.steel {
+  background-color: #b3b3b3;
+}
+ol.pokemons li.dark {
+  background-color: #212510;
+}
+
+li.pokemon {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: auto;
+  padding: 20px;
+  border-radius: 13px;
+  width: 275px;
+}
+li.pokemon:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.33);
+  transition: all 0.6s;
+}
+li.pokemon:hover img {
+  transform: scale(1.1);
+  transition: all 0.6s;
+}
+li.pokemon:hover .name {
+  font-size: 1.2rem;
+  transition: all 0.4s;
+}
+li.pokemon span {
+  color: rgba(20, 20, 20, 0.886);
+}
+li.pokemon .name {
+  text-transform: capitalize;
+  display: block;
+  padding: 1rem 0px 1.3rem 2rem;
+}
+li.pokemon .number {
+  opacity: 0.3;
+  float: right;
+  padding: 8px 20px 0px 0px;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@font-face {
+  font-family: pokeTitle;
+  src: url(../font/title.ttf);
+}
+header.pokedex-hub {
+  width: 100%;
+  height: 150px;
+  background-color: #ff0000;
+  justify-content: space-between;
+  display: flex;
+  border-radius: 0px 0px 50px 50px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.415);
+}
+header.pokedex-hub h1.pokedex-name {
+  font-family: pokeTitle;
+  color: white;
+  align-self: center;
+  padding-left: 5%;
+}
+
+@media (min-width: 1200px) {
+  h1.pokedex-name {
+    align-self: center;
+    font-size: 2.1rem;
+    letter-spacing: 5px;
+  }
+  nav.nav-bar {
+    align-self: center;
+  }
+  nav.nav-bar ul.search {
+    list-style-type: none;
+  }
+  nav.nav-bar li {
+    padding-right: 50px;
+    display: inline-block;
+  }
+  nav.nav-bar li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+.pokedex-pokemons {
+  width: 90%;
+  margin: auto;
+}
+
+.pokemons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 720px) {
+  .pokemons {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1199px) {
+  .pokemons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+ul.types {
+  list-style: none;
+}
+ul.types li {
+  padding: 8px;
+  text-align: center;
+}
+ul.types li.normal {
+  background-color: #f9f9f9;
+}
+ul.types li.fire {
+  background-color: rgba(190, 15, 56, 0.8588235294);
+}
+ul.types li.water {
+  background-color: #D1E8FF;
+}
+ul.types li.grass {
+  background-color: #32FCA7;
+}
+ul.types li.electric {
+  background-color: #F5DE7A;
+}
+ul.types li.bug {
+  background-color: #A3C585;
+}
+ul.types li.poison {
+  background-color: #db74fd;
+}
+ul.types li.flying {
+  background-color: #80dbfc;
+}
+ul.types li.ground {
+  background-color: #AC8764;
+}
+ul.types li.ice {
+  background-color: #C9E4E9;
+}
+ul.types li.rock {
+  background-color: #A08679;
+}
+ul.types li.psychic {
+  background-color: #fd78b8;
+}
+ul.types li.fighting {
+  background-color: #E95F5F;
+}
+ul.types li.fairy {
+  background-color: #FEC2D6;
+}
+ul.types li.ghost {
+  background-color: #7F4CA5;
+}
+ul.types li.dragon {
+  background-color: #5e98fc;
+}
+ul.types li.steel {
+  background-color: #E6E5DF;
+}
+ul.types li.dark {
+  background-color: #535353;
+}
+
+.type {
+  opacity: 0.6;
+  width: 60px;
+  margin: auto;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.479);
+  text-transform: capitalize;
+}/*# sourceMappingURL=index.css.map */
