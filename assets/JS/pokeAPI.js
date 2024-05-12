@@ -23,9 +23,9 @@ pokeApi.getPokemonDetail = (pokemon) => {
         .then(convertPokeApiDetailToPokemon)
 }
 
-pokeApi.getPokemons = function () {
+pokeApi.getPokemons = (offset = 0 , limit = 10) => {
   //interface de uma promisse
-  const url = "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=251"; //url com a API
+  const url = `https://pokeapi.co/api/v2/pokemon/?offset=${offset}&limit=${limit}`; //url com a API
 
   return fetch(url)  //fetch = promessa
     .then((response) => response.json()) //puxamos para se tornar um arquivo jason
@@ -35,4 +35,3 @@ pokeApi.getPokemons = function () {
     .then((pokemonsDetails) => pokemonsDetails)
 
 }
-

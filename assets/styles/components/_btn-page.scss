@@ -1,0 +1,21 @@
+
+div.page-btn{
+  padding: 3%;
+}
+
+button#more{
+  border: none;
+  width: 40%;
+  background-color: red;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  font-size: 1.6rem;
+  p.btn-txt{
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 1.6rem;
+  }
+}

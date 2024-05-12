@@ -8,6 +8,27 @@ body {
   margin: auto;
 }
 
+div.page-btn {
+  padding: 3%;
+}
+
+button#more {
+  border: none;
+  width: 40%;
+  background-color: red;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  font-size: 1.6rem;
+}
+button#more p.btn-txt {
+  color: white;
+  text-align: center;
+  margin: auto;
+  font-size: 1.6rem;
+}
+
 ol.pokemons {
   list-style-type: none;
 }
@@ -15,7 +36,7 @@ ol.pokemons li.normal {
   background-color: #9f9f9f;
 }
 ol.pokemons li.fire {
-  background-color: #f90536;
+  background-color: #f3496b;
 }
 ol.pokemons li.water {
   background-color: #9ECCFA;
@@ -188,7 +209,7 @@ ul.types li.normal {
   background-color: #f9f9f9;
 }
 ul.types li.fire {
-  background-color: rgba(190, 15, 56, 0.8588235294);
+  background-color: rgba(255, 0, 60, 0.8588235294);
 }
 ul.types li.water {
   background-color: #D1E8FF;
