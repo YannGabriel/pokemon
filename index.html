@@ -1,43 +1,277 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/styles/index.css">
-  <title>Pokémon - Pokedex</title>
+  <title>Pokemon</title>
+
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: Tahoma, sans-serif;
+  background-color: white;
+}
+
+.slides {
+  margin: auto;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 1000px;
+  height: 600px;
+  padding: 32px;
+  border-radius: 32px;
+}
+
+.conteiner-chc{
+  flex-direction: column;
+}
+.prev {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width:  100%;
+  color: #D41D1D;
+  text-decoration: none;
+}
+
+.prev-text {
+  margin-top: 4px;
+}
+
+.title{
+  font-size: 28px;
+  width:  100%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.content {
+  width: 200px;
+  text-align: center;
+}
+
+img {
+  width: auto;
+  height: 160px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.button {
+  background-color: #D41D1D;
+  color: #fff;
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 999px;
+}
+
+.dot-box {
+  text-align: center;
+}
+
+.dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 2px;
+  background-color: #c1c1c1;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color .6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #D41D1D;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .2}
+  to {opacity: 1}
+}
+  </style>
 </head>
 <body>
-
-  <header class="pokedex-hub">
-    <h1 class="pokedex-name">
-      Pokedex Kanto
+  <header class="container-top">
+    <h1 class="site-name">
+      Pokemon
     </h1>
     <nav class="nav-bar">
       <ul class="search">
-        <li><a href="">A</a></li>
-        <li><a href="">B</a></li>
-        <li><a href="">C</a></li>
-        <li><a href="">D</a></li>
+        <li><a href="">Pokedex</a></li>
+        <li><a href="">Personagens</a></li>
+        <li><a href="">Contato</a></li>
       </ul>
     </nav>
   </header>
 
-  <br><br><br><br>
+  <section class="first-about">
+    <p class="describe-pokemon">
+      Pokemon é um desenho japonês criado em 1995 por Satoshi Tajiri.
+      <br>
+      A franquia consiste em aventuras pelo mundo, caçando criaturas nomeadas de pokemon, atualmente a franquia pokemon existe em
+      <br>
+      Jogos, Séries, Animações, Filmes e muitas outras mídias.
+    </p>
+  </section>
 
-  <main class="pokedex-pokemons">
-    <ol class="pokemons" id="pokemonList">
-    </ol>
+  <section class="site-about">
+    <h2 class="our-site">
+      Nosso site:
+    </h2>
+    <p class="about-our-website">
+      Nossa página abordará a primeira geração de Pokemons mostrada no desenho Pokemon (2000),
+      <br>
+      onde os eventos ocorrem na região de Kanto, com Ash e seu amigo Pikachu!
+      <br>
+      <span class="destaque">
+        Veja mais sobre os personagens abaixo:
+      </span>
+    </p>
+  </section>
 
-    <div class="page-btn">
-      <button id="more" type="button">
-        <p class="btn-txt">Veja Mais</p>
-      </button>
+  <div class="container" >
+
+    <a href="#" class="prev" onclick="addSlides(-1)">
+      <span class="icon">
+        &#10094
+      </span>
+      <span class="prev-txt">
+        Voltar
+      </span>
+    </a>
+
+    <div class="itens">
+
+      <div class="slides" id="ash">
+        <img src="assets/image/ash.png" alt="" class="charecter">
+        <section class="content-chc">
+          <h2 class="character-name">
+            Ash
+          </h2>
+          <p class="about-character">
+            Sobre Ash
+          </p>
+        </section>
+      </div>
+
+      <div class="slides" id="pikachu">
+        <img src="assets/image/pikachu.png" alt="" class="charecter">
+        <h2 class="character-name">
+          Pikachu
+        </h2>
+        <p class="about-character">
+          Sobre Pikachu 
+        </p>
+      </div>
+
+      <div class="slides" id="misty">
+        <img src="assets/image/misty.png" alt="" class="charecter">
+        <h2 class="character-name">
+          Misty
+        </h2>
+        <p class="about-character">
+          Sobre Misty 
+        </p>
+      </div>
+
+      <div class="slides" id="brock">
+        <img src="assets/image/brock.png" alt="" class="charecter">
+        <h2 class="character-name">
+          Brock
+        </h2>
+        <p class="about-character">
+          Sobre Brock 
+        </p>
+      </div>
+
+      <div class="slides" id="rockets">
+        <img src="assets/image/rockets.png" alt="" class="charecter">
+        <h2 class="character-name">
+          Equipe Rocket
+        </h2>
+        <p class="about-character">
+          Sobre a Equipe Rocket 
+        </p>
+      </div>
+
     </div>
-  </main>
 
+    <div class="footer">
+      <button class="button" onclick="addSlides(1)">Próximo</button>
+      <div class="dot-box">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    let index = 1;
+showSlides(index);
+
+function addSlides(n) {
+  showSlides(index += n)
+}
+
+function currentSlide(n) {
+  showSlides(index = n)
+}
+
+function showSlides(n) {
+  let slides = document.getElementsByClassName("slides");
+  let dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) {
+    index = 1;
+  }
+
+  if (n < 1) {
+    index = slides.length
+  }
+
+  for (let i=0; i<slides.length; i++) {
+    slides[i].style.display = 'none';
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[index-1].style.display = "flex";
+  dots[index-1].className += " active";
+}
+  </script>
 </body>
-
-<script src="assets/JS/pokeAPI.js"></script>
-<script src="assets/JS/index.js"></script>
-<script src="assets/JS/pokemon-model.js"></script>
 </html>
