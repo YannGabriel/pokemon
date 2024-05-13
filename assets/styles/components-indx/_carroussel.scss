@@ -1,17 +1,5 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-body {
-  width: 100%;
-  height: 100vh;
-  font-family: Tahoma, sans-serif;
-  background-color: white;
-}
-
-@media (max-width: 720px) {
+@media (max-width: 720px){
   .slides {
     margin: auto;
     gap: 8px;
@@ -19,6 +7,7 @@ body {
     justify-content: center;
     align-items: center;
   }
+  
   .container {
     padding: 50px;
     margin: auto;
@@ -30,30 +19,36 @@ body {
     height: 600px;
     border-radius: 32px;
   }
+  
   .prev {
     display: flex;
     gap: 8px;
-    width: 100%;
+    width:  100%;
     color: #D41D1D;
     text-decoration: none;
   }
+  
   img {
     width: 280px;
   }
-  .content-chc {
-    text-align: center;
-    width: 100%;
-    padding: 3%;
-  }
-  .content-chc h2.character-name {
+
+.content-chc{
+  text-align: center;
+  width: 100%;
+  padding: 3%;
+  h2.character-name{
     color: red;
     padding: 2%;
   }
+}
+
+
   .footer {
     display: flex;
     flex-direction: column;
     gap: 28px;
   }
+  
   .button {
     background-color: #D41D1D;
     color: #fff;
@@ -64,9 +59,11 @@ body {
     cursor: pointer;
     border-radius: 999px;
   }
+  
   .dot-box {
     text-align: center;
   }
+  
   .dot {
     display: inline-block;
     width: 15px;
@@ -75,25 +72,25 @@ body {
     background-color: #c1c1c1;
     border-radius: 50%;
     cursor: pointer;
-    transition: background-color 0.6s ease;
+    transition: background-color .6s ease;
   }
+  
   .active, .dot:hover {
     background-color: #D41D1D;
   }
+  
   .fade {
     animation-name: fade;
     animation-duration: 1.5s;
   }
+  
   @keyframes fade {
-    from {
-      opacity: 0.2;
-    }
-    to {
-      opacity: 1;
-    }
+    from {opacity: .2}
+    to {opacity: 1}
   }
 }
-@media (min-width: 1200px) {
+
+@media (min-width: 1200px){
   .slides {
     margin: auto;
     gap: 20px;
@@ -101,6 +98,7 @@ body {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
+  
   .container {
     display: flex;
     margin: auto;
@@ -113,27 +111,32 @@ body {
     padding: 32px;
     border-radius: 32px;
   }
-  .conteiner-chc {
+  
+  .conteiner-chc{
     flex-direction: column;
   }
+  
   .prev {
     display: flex;
     align-items: center;
     gap: 8px;
-    width: 100%;
+    width:  100%;
     color: blue;
     text-decoration: none;
   }
+  
   img {
     width: auto;
     height: 160px;
   }
+  
   .footer {
     padding: 5%;
     display: flex;
     flex-direction: column;
     gap: 28px;
   }
+  
   .button {
     background-color: yellow;
     color: #fff;
@@ -144,9 +147,11 @@ body {
     cursor: pointer;
     border-radius: 999px;
   }
+  
   .dot-box {
     text-align: center;
   }
+  
   .dot {
     display: inline-block;
     width: 15px;
@@ -155,21 +160,20 @@ body {
     background-color: green;
     border-radius: 50%;
     cursor: pointer;
-    transition: background-color 0.6s ease;
+    transition: background-color .6s ease;
   }
+  
   .active, .dot:hover {
     background-color: purple;
   }
+  
   .fade {
     animation-name: fade;
     animation-duration: 1.5s;
   }
+  
   @keyframes fade {
-    from {
-      opacity: 0.2;
-    }
-    to {
-      opacity: 1;
-    }
+    from {opacity: .2}
+    to {opacity: 1}
   }
-}/*# sourceMappingURL=index.css.map */
+}
