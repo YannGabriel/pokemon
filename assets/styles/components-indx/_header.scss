@@ -1,0 +1,17 @@
+@import './site-colors';
+
+@media (max-width: 720px){
+header{
+  background-color: $color-red;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0px 0px 10px 10px;
+  h1.site-name{
+    color: white;
+    align-self: center;
+    padding-left: 5%;
+  }
+
+}
+}

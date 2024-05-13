@@ -4,27 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/styles/index.css">
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
   <title>Pokemon</title>
-
-  <style>
-   
-  </style>
 </head>
 <body>
   <header class="container-top">
     <h1 class="site-name">
       Pokemon
     </h1>
-    <nav class="nav-bar">
+
+    <i class="gg-menu" id="burger" onclick="clickMenu()"></i>
+
+    <menu class="nav-bar fade" id="itens">
       <ul class="search">
-        <li><a href="pokedex.html">Pokedex</a></li>
-        <li><a href="">Personagens</a></li>
-        <li><a href="">Contato</a></li>
+        <li><a href="pokedex.html" class="target">Pokedex</a></li>
+        <li><a href="" class="target">Personagens</a></li>
+        <li><a href="" class="target">Contato</a></li>
       </ul>
-    </nav>
+    </menu>
   </header>
 
-  <section class="first-about">
+  <section class="first-about" id="start">
     <p class="describe-pokemon">
       Pokemon é um desenho japonês criado em 1995 por Satoshi Tajiri.
       <br>
@@ -51,7 +51,7 @@
 
   <div class="container" >
 
-    <a href="#" class="prev" onclick="addSlides(-1)">
+    <a class="prev" onclick="addSlides(-1)">
       <span class="icon">
         &#10094
       </span>
@@ -62,62 +62,88 @@
 
     <div class="itens">
 
-      <div class="slides" id="ash">
+      <div class="slides fade" id="ash">
         <img src="assets/image/ash.png" alt="" class="charecter">
         <section class="content-chc">
           <h2 class="character-name">
             Ash
           </h2>
           <p class="about-character">
-            Sobre Ash
+            Ash é um garoto de 10 anos da cidade de Pallet, 
+            <br>
+            com seu sonho de se tornar o maior e melhor treinador
+            <br>
+            <strong class="destaque">do mundo!</strong>
           </p>
         </section>
       </div>
 
-      <div class="slides" id="pikachu">
+      <div class="slides fade" id="pikachu">
         <img src="assets/image/pikachu.png" alt="" class="charecter">
         <section class="content-chc">
           <h2 class="character-name">
             Pikachu
           </h2>
           <p class="about-character">
-            Sobre Pikachu
+            Pikachu é o melhor amigo de Ash, sendo também seu
+            <br>
+            <strong class="destaque">pokemon inicial</strong>
+            <br>
+            juntos desbravam o mundo atrás de aventuras e mistérios!
           </p>
         </section>
       </div>
 
-      <div class="slides" id="misty">
+      <div class="slides fade" id="misty">
         <img src="assets/image/misty.png" alt="" class="charecter">
         <section class="content-chc">
           <h2 class="character-name">
             Misty
           </h2>
           <p class="about-character">
-            Sobre Misty
+            Misty é a treinadora do ginásio de Água em Kanto,
+            <br>
+            porém em sua jornada ela se junta com Ash para desvendar o mundo pokemon
+            <br>
+            <strong class="destaque">e para ganhar sua bicicleta de volta!</strong>
           </p>
         </section>
       </div>
 
-      <div class="slides" id="brock">
+      <div class="slides fade" id="brock">
         <img src="assets/image/brock.png" alt="" class="charecter">
         <section class="content-chc">
           <h2 class="character-name">
             Brock
           </h2>
           <p class="about-character">
-            Sobre Brock
+            Brock é o treinador de Pedra em Kanto, mas tem seu sonho de ser um 
+            <br>
+            <strong class="destaque">
+              cuidador de Pokemons
+            </strong>
+            <br>
+            para isso se junta a Ash para uma incrível jornada!
           </p>
         </section>
       </div>
 
-      <div class="slides" id="rockets">
+      <div class="slides fade" id="rockets">
         <img src="assets/image/rockets.png" alt="" class="charecter">
         <section class="content-chc">
           <h2 class="character-name">
             Equipe Rocket
           </h2>
           <p class="about-character">
-            Sobre a Equipe Rocket
+            A Equipe Rocket persegue Ash para que possam roubar o Pikachu dele!
+            <br>
+            Comandados por Giovani, e se tornando uma equipe,
+            <br>
+            Jessie, James e Miau perseguem Ash e seu grupo em
+            <br>
+            <strong class="destaque">
+              todo lugar e qualquer região!
+            </strong>
           </p>
         </section>
       </div>
@@ -138,6 +164,7 @@
   </div>
 
   <script src="assets/JS/carroussel.js">
+
   </script>
 </body>
 </html>
