@@ -4,6 +4,10 @@
   padding:0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   height: 100vh;
@@ -11,6 +15,8 @@ body {
   background-color: white;
 }
 
+@import './components-indx/footer';
+@import './components-indx/txt-indx';
 @import './components-indx/carroussel';
 @import './components-indx/header';
 @import './components-indx/menu';
