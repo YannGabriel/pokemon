@@ -41,6 +41,14 @@ span.atr-direct {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: pokeTitle;
+  src: url(../font/title.ttf);
+}
+h1 {
+  font-family: pokeTitle;
+}
+
 .destaque {
   color: rgb(247, 19, 19);
 }
@@ -103,7 +111,67 @@ span.atr-direct {
     border-radius: 10px;
   }
 }
-@media (max-width: 720px) {
+@media (min-width: 1200px) {
+  p.describe-pokemon {
+    padding: 5% 0%;
+    font-size: 1.5rem;
+    width: 65%;
+    text-align: center;
+    margin: auto;
+  }
+  h2.our-site {
+    color: rgb(247, 19, 19);
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 3%;
+  }
+  p.about-our-website {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 5%;
+  }
+  h3.start-history {
+    color: rgb(247, 19, 19);
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 8% 0% 5% 0%;
+  }
+  p.about-history {
+    width: 85%;
+    font-size: 1.5rem;
+    margin: auto;
+    text-align: center;
+  }
+  h4.kanto {
+    text-align: center;
+    color: rgb(247, 19, 19);
+    font-size: 1.8rem;
+    padding: 5% 0%;
+  }
+  p.about-kanto {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 10%;
+  }
+  p.about-kanto strong > a {
+    color: rgb(247, 19, 19);
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  p.about-kanto img {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 1199px) {
   .slides {
     margin: auto;
     gap: 8px;
@@ -203,7 +271,8 @@ span.atr-direct {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: rgba(234, 234, 234, 0.788);
+    box-shadow: 0px 0px 20px rgb(194, 194, 194);
     width: 80%;
     height: 70%;
     padding: 32px;
@@ -216,13 +285,15 @@ span.atr-direct {
     display: flex;
     align-items: center;
     gap: 8px;
+    padding-left: 100px;
+    font-size: 1.3rem;
     width: 100%;
-    color: blue;
+    color: red;
     text-decoration: none;
   }
   img {
     width: auto;
-    height: 160px;
+    height: 300px;
   }
   .footer {
     padding: 5%;
@@ -231,7 +302,7 @@ span.atr-direct {
     gap: 28px;
   }
   .button {
-    background-color: yellow;
+    background-color: red;
     color: #fff;
     width: 200px;
     height: 40px;
@@ -248,13 +319,13 @@ span.atr-direct {
     width: 15px;
     height: 15px;
     margin: 0 2px;
-    background-color: green;
+    background-color: white;
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.6s ease;
   }
   .active, .dot:hover {
-    background-color: purple;
+    background-color: red;
   }
   .fade {
     animation-name: fade;
@@ -269,10 +340,10 @@ span.atr-direct {
     }
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 1199px) {
   header {
     background-color: rgb(247, 19, 19);
-    height: 100px;
+    height: 120px;
     display: flex;
     justify-content: space-between;
     border-radius: 0px 0px 10px 10px;
@@ -281,6 +352,21 @@ span.atr-direct {
     color: white;
     align-self: center;
     padding-left: 5%;
+  }
+}
+@media (min-width: 1200px) {
+  header.container-top {
+    background-color: rgb(247, 19, 19);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    border-radius: 0px 0px 20px 20px;
+  }
+  header.container-top h1.site-name {
+    padding-left: 4%;
+    font-size: 2.2rem;
+    color: #fff;
   }
 }
 @media (max-width: 1199px) {
@@ -331,5 +417,23 @@ span.atr-direct {
 @media (min-width: 1200px) {
   i#burger {
     display: none;
+  }
+  menu.nav-bar {
+    align-self: center;
+  }
+  menu.nav-bar ul.search {
+    display: ruby-text;
+    width: 400px;
+    list-style: none;
+    margin: auto;
+  }
+  menu.nav-bar ul.search li {
+    display: inline-block;
+    padding-right: 3%;
+  }
+  menu.nav-bar ul.search li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -48,4 +48,22 @@ menu.nav-bar{
   i#burger{
     display: none;
   }
+  menu.nav-bar{
+    align-self: center;
+    ul.search{
+      display: ruby-text;
+      width: 400px;
+      list-style: none;
+      margin: auto;
+      li{
+        display: inline-block;
+        padding-right: 3%;
+        a{
+          text-decoration: none;
+          color: #fff;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
 }
