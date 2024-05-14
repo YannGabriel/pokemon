@@ -1,0 +1,26 @@
+
+div.page-btn{
+  padding: 3%;
+}
+
+button#more{
+  cursor: pointer;
+  border: none;
+  width: 60%;
+  background-color: red;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  font-size: 1.6rem;
+  &:hover{
+    transition: all 0.6s;
+    box-shadow: 0px 0px 20px rgb(94, 94, 94);
+  }
+  p.btn-txt{
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 1.6rem;
+  }
+}
