@@ -349,6 +349,7 @@ h1 {
     border-radius: 0px 0px 10px 10px;
   }
   header h1.site-name {
+    font-size: 1.4rem;
     color: white;
     align-self: center;
     padding-left: 5%;
