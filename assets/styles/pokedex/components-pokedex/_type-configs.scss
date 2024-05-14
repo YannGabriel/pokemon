@@ -1,0 +1,96 @@
+@import './types-color';
+
+
+ul.types {
+  list-style: none;
+
+  li {
+    padding: 8px;
+    text-align: center;
+  }
+
+  li.normal {
+    background-color: $type-normal;
+  }
+
+  li.fire {
+    background-color: $type-fire;
+  }
+
+  li.water {
+    background-color: $type-water;
+  }
+
+  li.grass {
+    background-color: $type-grass;
+  }
+
+  li.electric {
+    background-color: $type-electric;
+  }
+
+  li.bug {
+    background-color: $type-bug;
+  }
+
+  li.poison {
+    background-color: $type-poison;
+  }
+
+  li.flying {
+    background-color: $type-flying;
+  }
+
+  li.ground {
+    background-color: $type-ground;
+  }
+
+  li.ice {
+    background-color: $type-ice;
+  }
+
+  li.rock {
+    background-color: $type-rock;
+  }
+
+  li.psychic {
+    background-color: $type-psychic;
+  }
+
+  li.fighting {
+    background-color: $type-fighting;
+  }
+
+  li.fairy {
+    background-color: $type-fairy;
+  }
+
+  li.ghost {
+    background-color: $type-ghost;
+  }
+
+  li.dragon {
+    background-color: $type-dragon;
+  }
+
+  li.steel {
+    background-color: $type-stell;
+  }
+
+
+  li.dark {
+    background-color: $type-dark;
+  }
+}
+
+.type{
+  opacity: 0.6;
+  width: 60px;
+  margin: auto;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.479);
+  text-transform: capitalize;
+}
